@@ -39,6 +39,8 @@ class School
     #self.roster[student_name].values.min
     self.roster.each do |grade, student_name|
       student_name.sort!
+      #or this works: self.roster.each do |grade, name_array|
+      #self.roster[grade] = name_array.sort!
     end
   end
 
